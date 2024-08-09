@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Loops in JavaScript</title>
+        <script>
+            function but() {
+			    let i, n, s;
+    i = 2;
+    n = 1;
+    i = parseInt(window.prompt("i = ", i));
+
+    s = 0;
+
+    for (n = 1; n <= i; n++) {
+        let sl = Math.pow((1 + (1 / n)), n);
+        s += sl;
+				}
+				
+                window.alert("Sum of row = " + s);
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Лабораторная работа №19: Циклы в JavaScript</h2>
+        <hr>
+        <p>Найти сумму <b><i>i</i></b> элементов ряда <b><i>(1+1/n)<sup>n</sup></i></b> при начальном значении <b><i>n = 1</i></b>.</p>
+        <p>Для ввода <b><i>i</i></b> использовать диалоговое окно ввода.</p>
+        <p>Результат представить в окне сообщения.</p>
+		
+        <form>
+            <input type="button" name="butt" value="Start" onclick="but()">
+        </form>
+    </body>
+</html>
